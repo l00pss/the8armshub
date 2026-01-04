@@ -16,7 +16,7 @@ function HomepageHeader() {
           <div className={styles.heroText}>
             <div className={styles.logoContainer}>
               <img
-                src="/img/logo.svg"
+                src="/img/logo_dark.svg"
                 alt="The8ArmsHub Logo"
                 className={styles.heroLogo}
               />

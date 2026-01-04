@@ -222,13 +222,14 @@
 /* Logo Styles */
 .logoContainer {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+  justify-content: flex-start;
+  margin-bottom: 0.8rem;
+  margin-left: -60px;
 }
 
 .heroLogo {
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   animation: logoFloat 3s ease-in-out infinite;
 }

@@ -105,6 +105,9 @@ const config: Config = {
       logo: {
         alt: 'The8ArmsHub Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo_dark.svg',
+        width: 32,
+        height: 32,
       },
       items: [
         {
