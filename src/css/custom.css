@@ -229,82 +229,133 @@
   color: var(--ifm-color-emphasis-500);
 }
 
-/* Responsive design improvements */
-@media screen and (max-width: 768px) {
-  .hero__title {
-    font-size: 2rem;
-  }
-
-  .hero__subtitle {
-    font-size: 1rem;
-  }
-
-  .navbar__title {
-    font-size: 1rem;
-  }
+/* Modern Search Styling */
+.navbar__search {
+  margin-right: 1rem;
 }
 
-/* Code syntax highlighting improvements */
-.token.keyword {
-  color: #0ea5e9;
-  font-weight: 600;
-}
-
-.token.string {
-  color: #10b981;
-}
-
-.token.number {
-  color: #f59e0b;
-}
-
-.token.comment {
-  color: #6b7280;
-  font-style: italic;
-}
-
-/* Table styling for algorithm comparison */
-.algorithm-comparison table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-}
-
-.algorithm-comparison th,
-.algorithm-comparison td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
-}
-
-.algorithm-comparison th {
-  background-color: var(--ifm-color-emphasis-100);
-  font-weight: 600;
-}
-
-/* Search improvements */
 .DocSearch-Button {
-  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 14px;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+  min-width: 200px;
 }
 
-/* Custom utility classes */
-.text-center {
-  text-align: center;
+.DocSearch-Button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-emphasis-800);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.mb-lg {
-  margin-bottom: 2rem;
+.DocSearch-Button-Container {
+  align-items: center;
 }
 
-.mt-lg {
-  margin-top: 2rem;
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--ifm-color-emphasis-500);
+  width: 16px;
+  height: 16px;
 }
 
-/* Mathematical formula styling */
-.katex {
-  font-size: 1.1em;
+.DocSearch-Button-Placeholder {
+  font-size: 14px;
+  padding-left: 8px;
+  color: var(--ifm-color-emphasis-600);
 }
 
-.katex-display {
-  margin: 1.5rem 0;
+.DocSearch-Button-Keys {
+  min-width: auto;
 }
+
+.DocSearch-Button-Key {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 11px;
+  padding: 2px 6px;
+  margin-left: 4px;
+}
+
+/* Dark theme adjustments for search */
+[data-theme='dark'] .DocSearch-Button {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .DocSearch-Button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--ifm-color-primary-lighter);
+  color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .DocSearch-Button-Key {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* Light theme adjustments for search */
+[data-theme='light'] .DocSearch-Button {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='light'] .DocSearch-Button:hover {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='light'] .DocSearch-Button-Key {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Search modal styling */
+.DocSearch-Modal {
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.DocSearch-SearchBar {
+  border-radius: 8px;
+}
+
+.DocSearch-Form {
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.DocSearch-Input {
+  font-size: 16px;
+}
+
+/* Responsive search */
+@media screen and (max-width: 768px) {
+  .DocSearch-Button {
+    min-width: auto;
+    width: 40px;
+    padding: 8px;
+  }
+
+  .DocSearch-Button-Placeholder,
+  .DocSearch-Button-Keys {
+    display: none;
+  }
+
+  .DocSearch-Button .DocSearch-Search-Icon {
+    margin: 0;
+  }
+}
+
+@media screen and

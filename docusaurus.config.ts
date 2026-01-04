@@ -70,6 +70,10 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          type: 'search',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/l00pss/the8armshub',
           label: 'GitHub',
           position: 'right',
@@ -137,6 +141,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['go', 'bash', 'json'],
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
     },
   } satisfies Preset.ThemeConfig,
 };
