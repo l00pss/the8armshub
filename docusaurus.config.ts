@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'The8ArmsHub',
   tagline: 'Master algorithms, mathematics, and distributed systems - your comprehensive guide to computational thinking and system design',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   future: {
     v4: true,
