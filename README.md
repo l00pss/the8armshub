@@ -6,8 +6,6 @@ Think of it as a digital mentor, carefully crafted to make complex computational
 
 **Why "The8ArmsHub"?** Like an octopus reaching in all directions, we explore every angle of computer science fundamentals—from the elegance of mathematical proofs to the practical challenges of building systems that scale to millions of users.
 
-This project is lovingly built with [Docusaurus](https://docusaurus.io/), which gives us all the modern features you'd expect: lightning-fast search, beautiful dark mode, mobile-friendly design, and a delightful reading experience.
-
 ## What Makes This Place Special? 
 
 ###  **Deep Dives into Algorithms**
@@ -34,7 +32,7 @@ Learn how to build systems that don't break when millions of people use them:
 ###  **Everything in Go**
 Why Go? Because it's fast, readable, and perfect for both learning algorithms and building distributed systems. Every concept comes with clean, well-commented Go code that you can run, modify, and learn from.
 
-## Getting Started (It's Really Easy!) 🏃‍♂️
+## Getting Started (It's Really Easy!) 
 
 Ready to dive in? Here's how to get The8ArmsHub running on your machine:
 
@@ -85,20 +83,6 @@ the8armshub/
 └── static/                   # Images, assets, and files
 ```
 
-## Your Learning Journey 
-
-###  **New to Computer Science?**
-Start with our [Algorithms Introduction](docs/algorithms/intro.md). We'll guide you from the very basics to advanced concepts, with plenty of examples along the way.
-
-###  **Want to Understand the Math?**
-Jump into [Mathematics](docs/mathematics/intro.md) where we make linear algebra, calculus, and statistics approachable and practical.
-
-###  **Ready to Build Systems?**
-Explore [Distributed Systems](docs/distributed-systems/intro.md) and learn how to create applications that handle real-world scale and complexity.
-
-###  **Looking for Practical Insights?**
-Check out our [Blog](blog/) for tutorials, case studies, and deep dives into specific topics.
-
 ## Want to Contribute? We'd Love Your Help! 
 
 The8ArmsHub is a community effort, and every contribution makes it better for everyone. Here's how you can help:
@@ -108,10 +92,10 @@ The8ArmsHub is a community effort, and every contribution makes it better for ev
 - Code example not working? 
 - Concept that could be clearer?
 
-Just [open an issue](https://github.com/the8armshub/the8armshub/issues) and we'll fix it together!
+Just [open an issue](https://github.com/l00pss/the8armshub/issues) and we'll fix it together!
 
 ### ️ **Want to Add Content?**
-1. Fork the repository
+1. Clone the repository
 2. Create a new branch for your changes
 3. Add your content (we have templates to help!)
 4. Submit a pull request
