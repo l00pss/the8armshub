@@ -18,7 +18,7 @@
       script.setAttribute('data-name', 'BMC-Widget');
       script.setAttribute('data-cfasync', 'false');
       script.setAttribute('data-id', 'l00pss');
-      script.setAttribute('data-description', 'Support The8ArmsHub!');
+      script.setAttribute('data-description', 'Support SupDino!');
       script.setAttribute('data-message', 'Help us create more quality content!');
       script.setAttribute('data-color', '#5F7FFF');
 

@@ -1,19 +1,19 @@
 ---
 slug: welcome-to-supdino
-title: Welcome to The8ArmsHub - Master Algorithms, Mathematics, and Distributed Systems
+title: Welcome to SupDino - Master Algorithms, Mathematics, and Distributed Systems
 authors: [supdino]
 tags: [welcome, algorithms, mathematics, distributed-systems, go, learning]
 ---
 
-# Welcome to The8ArmsHub! 🚀
+# Welcome to SupDino! 🚀
 
 Welcome to your comprehensive resource for algorithms, mathematics, and distributed systems! We're thrilled to have you join us on this exciting journey into computational thinking, mathematical foundations, and scalable system design.
 
 <!--truncate-->
 
-## What Makes The8ArmsHub Special?
+## What Makes SupDino Special?
 
-The8ArmsHub isn't just another tutorial site. It's a carefully crafted learning environment designed to bridge theory and practice across three essential areas of computer science and engineering.
+SupDino isn't just another tutorial site. It's a carefully crafted learning environment designed to bridge theory and practice across three essential areas of computer science and engineering.
 
 ### 🎯 **Three Pillars of Mastery**
 
@@ -156,7 +156,7 @@ We're constantly expanding across all three domains:
 
 ## Join Our Community
 
-The8ArmsHub is more than documentation—it's a learning community:
+SupDino is more than documentation—it's a learning community:
 
 - **Contribute**: Share improvements, examples, and new content
 - **Discuss**: Engage with fellow learners on complex topics
@@ -183,7 +183,7 @@ Choose your starting point based on your interests and goals:
 
 Remember: every expert was once a beginner. The journey of mastery begins with a single step.
 
-Welcome to The8ArmsHub—let's build something amazing together! ✨
+Welcome to SupDino—let's build something amazing together! ✨
 
 ---
 

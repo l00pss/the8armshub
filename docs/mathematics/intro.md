@@ -1,6 +1,6 @@
 # Introduction to Mathematics for Computer Science
 
-Welcome to the mathematical foundations section of The8ArmsHub. This comprehensive study examines the mathematical concepts that underpin computer science, providing both theoretical understanding and practical computational skills essential for advanced algorithmic thinking and system design.
+Welcome to the mathematical foundations section of SupDino. This comprehensive study examines the mathematical concepts that underpin computer science, providing both theoretical understanding and practical computational skills essential for advanced algorithmic thinking and system design.
 
 ## The Role of Mathematics in Computer Science
 

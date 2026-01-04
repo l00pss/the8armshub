@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'The8ArmsHub',
+  title: 'SupDino',
   tagline: 'Master algorithms, mathematics, and distributed systems - your comprehensive guide to computational thinking and system design',
   favicon: 'img/favicon.svg',
 
@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://the8armshub.com',
+  url: 'https://supdino.com',
   baseUrl: '/',
 
   organizationName: 'supdino',
@@ -30,7 +30,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/l00pss/the8armshub/tree/main/',
+          editUrl: 'https://github.com/l00pss/supdino/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -38,7 +38,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/l00pss/the8armshub/tree/main/',
+          editUrl: 'https://github.com/l00pss/supdino/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -69,9 +69,9 @@ const config: Config = {
       defaultMode: 'light',
     },
     navbar: {
-      title: 'The8ArmsHub',
+      title: 'SupDino',
       logo: {
-        alt: 'The8ArmsHub Logo',
+        alt: 'SupDino Logo',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg',
         width: 32,
@@ -89,7 +89,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/l00pss/the8armshub',
+          href: 'https://github.com/l00pss/supdino',
           label: 'GitHub',
           position: 'right',
         },
@@ -124,16 +124,16 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/l00pss/the8armshub',
+              href: 'https://github.com/l00pss/supdino',
             },
             {
               label: 'Contribute',
-              href: 'https://github.com/l00pss/the8armshub/blob/main/CONTRIBUTING.md',
+              href: 'https://github.com/l00pss/supdino/blob/main/CONTRIBUTING.md',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} The8ArmsHub. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SupDino. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

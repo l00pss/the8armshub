@@ -1,6 +1,6 @@
 # Introduction to Algorithms
 
-Welcome to the algorithms section of The8ArmsHub. This comprehensive guide explores the fundamental concepts of computational problem-solving and provides practical implementations in Go.
+Welcome to the algorithms section of SupDino. This comprehensive guide explores the fundamental concepts of computational problem-solving and provides practical implementations in Go.
 
 ## Understanding Algorithms
 

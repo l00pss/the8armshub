@@ -1,10 +1,10 @@
-# The8ArmsHub: Your Gateway to Computer Science Mastery 
+# SupDino: Your Gateway to Computer Science Mastery 
 
-Welcome to The8ArmsHub! This is more than just documentation—it's your personal guide through the fascinating worlds of **algorithms**, **mathematics**, and **distributed systems**. 
+Welcome to SupDino! This is more than just documentation—it's your personal guide through the fascinating worlds of **algorithms**, **mathematics**, and **distributed systems**. 
 
 Think of it as a digital mentor, carefully crafted to make complex computational ideas clear, accessible, and genuinely exciting. Whether you're cramming for that algorithms exam, preparing for technical interviews, or just satisfying your curiosity about how computers solve problems, you've found the right place.
 
-**Why "The8ArmsHub"?** Like an octopus reaching in all directions, we explore every angle of computer science fundamentals—from the elegance of mathematical proofs to the practical challenges of building systems that scale to millions of users.
+**Why "SupDino"?** Like an octopus reaching in all directions, we explore every angle of computer science fundamentals—from the elegance of mathematical proofs to the practical challenges of building systems that scale to millions of users.
 
 ## What Makes This Place Special? 
 
@@ -34,7 +34,7 @@ Why Go? Because it's fast, readable, and perfect for both learning algorithms an
 
 ## Getting Started (It's Really Easy!) 
 
-Ready to dive in? Here's how to get The8ArmsHub running on your machine:
+Ready to dive in? Here's how to get SupDino running on your machine:
 
 ### What You'll Need
 - **Node.js** (version 18 or newer) - [Download here](https://nodejs.org/)
@@ -46,7 +46,7 @@ Ready to dive in? Here's how to get The8ArmsHub running on your machine:
 
 1. **Grab the code:**
    ```bash
-   git clone https://github.com/l00pss/the8armshub.git
+   git clone https://github.com/l00pss/supdino.git
    cd supdino
    ```
 
@@ -67,7 +67,7 @@ The site will automatically reload as you make changes—perfect for contributin
 ## How This Knowledge Base is Organized 
 
 ```
-the8armshub/
+supdino/
 ├── docs/
 │   ├── algorithms/              # Algorithm deep dives
 │   │   ├── intro.md            # Start here if you're new
@@ -85,14 +85,14 @@ the8armshub/
 
 ## Want to Contribute? We'd Love Your Help! 
 
-The8ArmsHub is a community effort, and every contribution makes it better for everyone. Here's how you can help:
+SupDino is a community effort, and every contribution makes it better for everyone. Here's how you can help:
 
 ###  **Found Something Wrong?**
 - Typo in an explanation? 
 - Code example not working? 
 - Concept that could be clearer?
 
-Just [open an issue](https://github.com/l00pss/the8armshub/issues) and we'll fix it together!
+Just [open an issue](https://github.com/l00pss/supdino/issues) and we'll fix it together!
 
 ### ️ **Want to Add Content?**
 1. Clone the repository
@@ -124,7 +124,7 @@ npm run clear      # Clear Docusaurus cache
 npm run typecheck  # Check TypeScript types
 ```
 
-## The Story Behind The8ArmsHub 
+## The Story Behind SupDino 
 
 This project started from a simple frustration: why is computer science education so often dry, abstract, and disconnected from real applications? 
 
@@ -144,7 +144,7 @@ That's what we're building here. Not just another documentation site, but a plac
 - 📧 Email: mammadli.vugar@hotmail.com
 - 🐦 Let's connect and share ideas!
 
-If The8ArmsHub has helped you learn something new or land that job, consider [buying me a coffee](https://www.buymeacoffee.com/l00pss) ☕ It keeps the servers running and motivates me to create even better content!
+If SupDino has helped you learn something new or land that job, consider [buying me a coffee](https://www.buymeacoffee.com/l00pss) ☕ It keeps the servers running and motivates me to create even better content!
 
 ## License 📄
 

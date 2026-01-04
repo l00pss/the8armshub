@@ -228,10 +228,10 @@ const ContributorFooter: React.FC = () => {
             fontSize: '0.9rem',
             margin: '0 0 0.5rem 0'
           }}>
-            Want to contribute to The8ArmsHub?
+            Want to contribute to SupDino?
           </p>
           <a
-            href="https://github.com/l00pss/the8armshub"
+            href="https://github.com/l00pss/supdino"
             target="_blank"
             rel="noopener noreferrer"
             style={{

@@ -18,7 +18,7 @@ function HomepageHeader() {
             <div className={styles.logoContainer}>
               <img
                 src="/img/logo_dark.svg"
-                alt="The8ArmsHub Logo"
+                alt="SupDino Logo"
                 className={styles.heroLogo}
               />
             </div>
@@ -150,14 +150,14 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="The8ArmsHub - Computer Science Mastery"
+      title="SupDino - Computer Science Mastery"
       description="Master algorithms, mathematics, and distributed systems with comprehensive guides, Go implementations, and practical examples.">
       <HomepageHeader />
       <main>
         <FeaturesSection />
         <section style={{ padding: '4rem 0', textAlign: 'center', backgroundColor: 'var(--ifm-background-color)' }}>
           <div className="container">
-            <h2>Support The8ArmsHub</h2>
+            <h2>Support SupDino</h2>
             <p>Help us create more quality content and maintain this educational resource!</p>
             <BuyMeCoffeeButton username="l00pss" message="Buy me a coffee" />
           </div>
