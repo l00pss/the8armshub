@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import BuyMeCoffeeButton from '@site/src/components/BuyMeCoffeeButton';
 
 import styles from './index.module.css';
 
@@ -154,6 +155,13 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <FeaturesSection />
+        <section style={{ padding: '4rem 0', textAlign: 'center', backgroundColor: 'var(--ifm-background-color)' }}>
+          <div className="container">
+            <h2>Support The8ArmsHub</h2>
+            <p>Help us create more quality content and maintain this educational resource!</p>
+            <BuyMeCoffeeButton username="l00pss" message="Buy me a coffee" />
+          </div>
+        </section>
       </main>
     </Layout>
   );

@@ -456,9 +456,42 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* Buy Me a Coffee Widget Styling for Docs Pages */
+.bmc-button {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+}
+
+.bmc-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Enhanced styling for docs pages */
+.bmc-btn-container {
+  z-index: 1000 !important;
+}
+
+/* Specific positioning for docs layout */
+@media (min-width: 997px) {
+  /* When sidebar is visible, position in upper right */
+  .docs-wrapper .bmc-btn-container,
+  .docusaurus-docs .bmc-btn-container {
+    position: fixed !important;
+    top: 120px !important;
+    right: 30px !important;
+    z-index: 999 !important;
+  }
+}
+
 /* Widget positioning adjustments for mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 996px) {
   .bmc-button {
+    display: none !important;
+  }
+
+  .bmc-btn-container {
     display: none !important;
   }
 }
@@ -466,4 +499,16 @@
 /* Dark mode compatibility for widget */
 [data-theme='dark'] .bmc-button {
   filter: brightness(0.9) contrast(1.1) !important;
+}
+
+/* Ensure widget doesn't interfere with sidebar content */
+.theme-doc-sidebar-container {
+  position: relative;
+}
+
+/* Additional spacing for docs content when widget is present */
+@media (min-width: 997px) {
+  .theme-doc-sidebar-container + .main-wrapper {
+    margin-right: 0;
+  }
 }

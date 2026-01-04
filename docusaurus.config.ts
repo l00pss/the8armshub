@@ -24,7 +24,6 @@ const config: Config = {
     {
       src: 'https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js',
       async: true,
-      defer: true,
       'data-name': 'BMC-Widget',
       'data-cfasync': 'false',
       'data-id': 'l00pss',
@@ -35,20 +34,12 @@ const config: Config = {
       'data-x_margin': '18',
       'data-y_margin': '18',
     },
-    {
-      src: 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js',
-      async: true,
-      defer: true,
-      'data-name': 'bmc-button',
-      'data-slug': 'l00pss',
-      'data-color': '#FFDD00',
-      'data-emoji': '☕',
-      'data-font': 'Cookie',
-      'data-text': 'Buy me a coffee',
-      'data-outline-color': '#000000',
-      'data-font-color': '#000000',
-      'data-coffee-color': '#ffffff',
-    },
+    '/js/buymeacoffee.js',
+  ],
+
+  // Client modules for Buy Me a Coffee widget
+  clientModules: [
+    require.resolve('./src/client/buyMeCoffee.tsx'),
   ],
 
   i18n: {
@@ -62,7 +53,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/the8armshub/the8armshub/tree/main/',
+          editUrl: 'https://github.com/l00pss/the8armshub/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -70,7 +61,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/the8armshub/the8armshub/tree/main/',
+          editUrl: 'https://github.com/l00pss/the8armshub/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -148,23 +139,6 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/the8armshub',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/the8armshub',
-            },
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/the8armshub',
-            },
-          ],
-        },
-        {
           title: 'More',
           items: [
             {
@@ -173,16 +147,16 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/the8armshub/the8armshub',
+              href: 'https://github.com/l00pss/the8armshub',
             },
             {
               label: 'Contribute',
-              href: 'https://github.com/the8armshub/the8armshub/blob/main/CONTRIBUTING.md',
+              href: 'https://github.com/l00pss/the8armshub/blob/main/CONTRIBUTING.md',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} The8ArmsHub. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} The8ArmsHub. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
