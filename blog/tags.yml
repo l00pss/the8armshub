@@ -1,19 +1,35 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+welcome:
+  label: Welcome
+  permalink: /welcome
+  description: Welcome posts and introductory content
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+algorithms:
+  label: Algorithms
+  permalink: /algorithms
+  description: Posts about algorithms and algorithmic thinking
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+mathematics:
+  label: Mathematics
+  permalink: /mathematics
+  description: Mathematical concepts and theory
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+distributed-systems:
+  label: Distributed Systems
+  permalink: /distributed-systems
+  description: Distributed computing, scalability, and system design
+
+go:
+  label: Go
+  permalink: /go
+  description: Go programming language content and examples
+
+learning:
+  label: Learning
+  permalink: /learning
+  description: Learning tips, study guides, and educational content
+
+programming:
+  label: Programming
+  permalink: /programming
+  description: Programming concepts and best practices
+

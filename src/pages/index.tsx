@@ -20,8 +20,23 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/algorithms/intro">
+            Start Learning Algorithms 🧠
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            to="/docs/mathematics/intro">
+            Explore Mathematics 📐
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            to="/docs/distributed-systems/intro">
+            Build Distributed Systems 🌐
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            to="/blog">
+            Read Blog 📝
           </Link>
         </div>
       </div>
@@ -33,11 +48,37 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Welcome to The8ArmsHub"
+      description="Master algorithms, mathematics, and distributed systems with comprehensive guides, Go implementations, and practical examples. Your one-stop resource for computational thinking and system design.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+
+        {/* Additional sections can be added here */}
+        <section className={styles.aboutSection}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--8 col--offset-2">
+                <div className="text--center">
+                  <Heading as="h2">A Modern Learning Environment</Heading>
+                  <p className="margin-bottom--lg">
+                    The8ArmsHub provides comprehensive coverage of three essential areas
+                    of computer science: algorithms for problem-solving, mathematics for
+                    understanding computational foundations, and distributed systems for
+                    building scalable applications. Every concept is explained clearly and
+                    implemented in Go with practical examples.
+                  </p>
+                  <p className="margin-bottom--lg">
+                    Whether you're a student preparing for technical interviews, a developer
+                    building large-scale systems, or an engineer looking to deepen your
+                    theoretical knowledge, our content bridges theory and practice with
+                    real-world applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

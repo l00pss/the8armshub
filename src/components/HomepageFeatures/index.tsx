@@ -11,32 +11,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
+    title: 'Deep Dives into Algorithms',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Master everything from essential sorting and searching algorithms to
+        advanced topics like graph theory and dynamic programming. Each concept
+        includes clear explanations, complexity analysis, and practical Go implementations.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Comprehensive Mathematics',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Explore linear algebra, calculus, discrete mathematics, and statistics.
+        Mathematical foundations for computer science, machine learning, and
+        engineering applications made accessible with Go examples.
+      </>
+    ),
+  },
+  {
+    title: 'Distributed Systems Mastery',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Learn to build scalable, fault-tolerant distributed systems. From consensus
+        algorithms to microservices architecture, understand how modern large-scale
+        applications are designed and implemented in Go.
       </>
     ),
   },
