@@ -4,9 +4,17 @@
 
 .heroBanner {
   padding: 4rem 0 6rem 0;
-  background: linear-gradient(180deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-background-color) 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   position: relative;
   overflow: hidden;
+}
+
+[data-theme='light'] .heroBanner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
 }
 
 .heroContent {
@@ -27,17 +35,37 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-dark));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .heroSubtitle {
   font-size: 1.25rem;
-  color: var(--ifm-color-emphasis-700);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin-bottom: 2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Theme specific adjustments for hero text */
+[data-theme='light'] .heroTitle {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='light'] .heroSubtitle {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #f7fafc;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .heroSubtitle {
+  color: rgba(247, 250, 252, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .heroButtons {
@@ -51,7 +79,7 @@
 }
 
 .codeBlock {
-  background: var(--ifm-color-emphasis-100);
+  background: var(--ifm-background-surface-color);
   border-radius: 12px;
   border: 1px solid var(--ifm-color-emphasis-300);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -115,7 +143,7 @@
 }
 
 .featureCard {
-  background: var(--ifm-color-emphasis-0);
+  background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
   padding: 2rem;
@@ -207,6 +235,34 @@
   }
 }
 
+/* Light Mode Adjustments */
+[data-theme='light'] .codeBlock {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+[data-theme='light'] .codeHeader {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+[data-theme='light'] .codeContent {
+  color: #1e293b;
+}
+
+[data-theme='light'] .featureCard {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+[data-theme='light'] .featureTitle {
+  color: #1e293b;
+}
+
+[data-theme='light'] .featureDescription {
+  color: #475569;
+}
+
 /* Dark Mode Adjustments */
 [data-theme='dark'] .codeBlock {
   background: var(--ifm-background-surface-color);
@@ -216,4 +272,3 @@
 [data-theme='dark'] .featureCard {
   background: var(--ifm-background-surface-color);
 }
-

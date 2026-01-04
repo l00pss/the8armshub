@@ -180,11 +180,53 @@
 
 /* Footer styling */
 .footer {
-  background-color: var(--ifm-color-emphasis-100);
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.footer__links {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.footer__link-item {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+}
+
+.footer__title {
+  color: var(--ifm-color-emphasis-900);
+}
+
+.footer__copyright {
+  color: var(--ifm-color-emphasis-600);
 }
 
 [data-theme='dark'] .footer {
   background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .footer__links {
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+[data-theme='dark'] .footer__title {
+  color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: var(--ifm-color-emphasis-500);
 }
 
 /* Responsive design improvements */
