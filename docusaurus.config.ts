@@ -19,6 +19,38 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  // Scripts configuration for Buy Me a Coffee widget
+  scripts: [
+    {
+      src: 'https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js',
+      async: true,
+      defer: true,
+      'data-name': 'BMC-Widget',
+      'data-cfasync': 'false',
+      'data-id': 'l00pss',
+      'data-description': 'Support me on Buy me a coffee!',
+      'data-message': '',
+      'data-color': '#5F7FFF',
+      'data-position': 'Right',
+      'data-x_margin': '18',
+      'data-y_margin': '18',
+    },
+    {
+      src: 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js',
+      async: true,
+      defer: true,
+      'data-name': 'bmc-button',
+      'data-slug': 'l00pss',
+      'data-color': '#FFDD00',
+      'data-emoji': '☕',
+      'data-font': 'Cookie',
+      'data-text': 'Buy me a coffee',
+      'data-outline-color': '#000000',
+      'data-font-color': '#000000',
+      'data-coffee-color': '#ffffff',
+    },
+  ],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -50,6 +82,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/the8armshub-social-card.jpg',
     colorMode: {
@@ -68,10 +112,6 @@ const config: Config = {
           sidebarId: 'mainSidebar',
           position: 'left',
           label: 'Docs',
-        },
-        {
-          type: 'search',
-          position: 'right',
         },
         {
           href: 'https://github.com/l00pss/the8armshub',

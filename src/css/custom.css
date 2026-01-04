@@ -232,25 +232,70 @@
 /* Modern Search Styling */
 .navbar__search {
   margin-right: 1rem;
+  order: -1; /* Position search before other right-aligned items */
 }
 
-.DocSearch-Button {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  color: var(--ifm-color-emphasis-600);
-  font-size: 14px;
-  padding: 8px 12px;
-  transition: all 0.2s ease;
-  backdrop-filter: blur(10px);
-  min-width: 200px;
+/* Local Search Plugin Styling */
+.aa-DetachedSearchButton {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+  color: var(--ifm-color-emphasis-600) !important;
+  font-size: 14px !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease !important;
+  backdrop-filter: blur(10px) !important;
+  min-width: 280px !important;
+  margin-right: 1rem !important;
 }
 
-.DocSearch-Button:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: var(--ifm-color-primary);
-  color: var(--ifm-color-emphasis-800);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.aa-DetachedSearchButton svg {
+  color: var(--ifm-color-emphasis-500) !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.aa-DetachedSearchButtonPlaceholder {
+  font-size: 14px !important;
+  color: var(--ifm-color-emphasis-600) !important;
+  margin-left: 8px !important;
+}
+
+.aa-DetachedSearchButtonIcon {
+  margin-right: 8px !important;
+}
+
+.aa-DetachedSearchButton:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: var(--ifm-color-primary) !important;
+  color: var(--ifm-color-emphasis-800) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Dark theme adjustments for search */
+[data-theme='dark'] .aa-DetachedSearchButton {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--ifm-color-emphasis-600) !important;
+}
+
+[data-theme='dark'] .aa-DetachedSearchButton:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--ifm-color-primary-lighter) !important;
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+/* Light theme adjustments for search */
+[data-theme='light'] .aa-DetachedSearchButton {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  color: var(--ifm-color-emphasis-600) !important;
+}
+
+[data-theme='light'] .aa-DetachedSearchButton:hover {
+  background: rgba(0, 0, 0, 0.08) !important;
+  border-color: var(--ifm-color-primary) !important;
+  color: var(--ifm-color-emphasis-800) !important;
 }
 
 .DocSearch-Button-Container {
@@ -340,6 +385,16 @@
   font-size: 16px;
 }
 
+/* Navbar positioning adjustments */
+.navbar__items--right {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar__items--right .aa-DetachedSearchButton {
+  margin-right: 1rem !important;
+}
+
 /* Responsive search */
 @media screen and (max-width: 768px) {
   .DocSearch-Button {
@@ -356,6 +411,48 @@
   .DocSearch-Button .DocSearch-Search-Icon {
     margin: 0;
   }
+
+  .aa-DetachedSearchButton {
+    min-width: auto !important;
+    width: 40px !important;
+    padding: 8px !important;
+  }
+
+  .aa-DetachedSearchButtonPlaceholder {
+    display: none !important;
+  }
+
+  .aa-DetachedSearchButtonIcon {
+    margin: 0 !important;
+  }
 }
 
-@media screen and
+@media screen and (max-width: 996px) {
+  .aa-DetachedSearchButton {
+    min-width: 200px !important;
+  }
+}
+
+/* Buy Me a Coffee Widget Styling */
+.bmc-button {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+}
+
+.bmc-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Widget positioning adjustments for mobile */
+@media screen and (max-width: 768px) {
+  .bmc-button {
+    display: none !important;
+  }
+}
+
+/* Dark mode compatibility for widget */
+[data-theme='dark'] .bmc-button {
+  filter: brightness(0.9) contrast(1.1) !important;
+}
