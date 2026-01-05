@@ -133,7 +133,6 @@ type WAL struct {
 	batch             Batch
 	transactions      map[TransactionID]*Transaction
 	transactionsMu    sync.RWMutex
-	transactionConfig TransactionConfig
 }
 
 func NewWAL(dir string, config Config) result.Result[*WAL] {
@@ -175,7 +174,6 @@ func NewWAL(dir string, config Config) result.Result[*WAL] {
 		cache:             &cache,
 		transactions:      make(map[TransactionID]*Transaction),
 		transactionsMu:    sync.RWMutex{},
-		transactionConfig: DefaultTransactionConfig(),
 	}
 
 	return result.Ok(w)
@@ -247,7 +245,7 @@ func (w *WAL) BeginTransaction(timeout time.Duration) result.Result[TransactionI
 	}
 
 	if timeout == 0 {
-		timeout = w.transactionConfig.DefaultTimeout
+		timeout = w.config.DefaultTimeout
 	}
 
 	txID := generateTransactionID()
@@ -282,7 +280,7 @@ func (w *WAL) AddToTransaction(txID TransactionID, entry Entry) result.Result[st
 		return result.Err[struct{}](ErrTransactionExpired)
 	}
 
-	if len(tx.Entries) >= w.transactionConfig.MaxEntries {
+	if len(tx.Entries) >= w.config.MaxEntries {
 		return result.Err[struct{}](ErrTransactionTooLarge)
 	}
 
@@ -864,7 +862,7 @@ func GroupCommitTransactions(wal *WAL, txOperations [][]Entry) error {
 // Cleanup expired transactions for better performance
 func (w *WAL) StartTransactionCleanup() {
 	go func() {
-		ticker := time.NewTicker(w.transactionConfig.CleanupInterval)
+		ticker := time.NewTicker(w.config.CleanupInterval)
 		defer ticker.Stop()
 
 		for {

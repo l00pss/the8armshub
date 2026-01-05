@@ -74,6 +74,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'distributed-systems/replication/wal',
             'distributed-systems/replication/segmented-log',
+            'distributed-systems/replication/low-water-mark',
           ],
         },
       ],
