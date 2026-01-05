@@ -15,6 +15,8 @@ We don't just show you code—we help you *understand* it. From bubble sort (eve
 - Complete implementations in Go with extensive comments
 - Real-world applications so you know when to use what
 
+**Latest Addition**: Dive deep into **Minimum Spanning Trees** with comprehensive coverage of Prim's and Kruskal's algorithms, complete with Go implementations and visual explanations. Learn how these fundamental algorithms solve real-world connectivity problems in network design!
+
 ###  **Mathematics That Actually Makes Sense**
 Math doesn't have to be intimidating! We cover:
 - **Linear Algebra**: The foundation of computer graphics, machine learning, and data science

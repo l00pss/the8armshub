@@ -1,0 +1,14 @@
+{
+  "label": "Replication",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "className": "blue",
+  "link": {
+    "type": "generated-index",
+    "title": "Replication in Distributed Systems",
+    "description": "Explore replication techniques including Write-Ahead Logging (WAL), consensus algorithms, and data consistency patterns in distributed systems.",
+    "slug": "/distributed-systems/replication"
+  }
+}
+

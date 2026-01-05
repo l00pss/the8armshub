@@ -66,6 +66,8 @@ The third area addresses the fundamental challenge of managing state across mult
 
 **Replication Strategies**: Study of different approaches to data replication, including master-slave, master-master, and quorum-based systems. Analysis includes conflict detection and resolution strategies.
 
+**Write-Ahead Logging (WAL)**: Comprehensive examination of WAL as a fundamental technique for ensuring data durability and consistency. Detailed coverage includes implementation considerations, transactional storage integration, recovery mechanisms, and comparison with event sourcing patterns.
+
 **Distributed Transactions**: Investigation of transaction processing across multiple nodes, including two-phase commit protocols and more modern approaches that avoid the limitations of traditional ACID transactions.
 
 ### System Architecture and Design

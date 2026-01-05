@@ -34,6 +34,9 @@ We explore various approaches to organizing data, from simple methods like Bubbl
 ### Search Algorithms
 Learn efficient methods for finding specific elements in data structures, including Binary Search for sorted arrays and graph traversal algorithms like Depth-First Search (DFS) and Breadth-First Search (BFS).
 
+### Tree Algorithms
+Explore fundamental tree data structures and algorithms including Minimum Spanning Trees (MST), Binary Search Trees, and tree traversal techniques. Learn how to efficiently solve connectivity problems and optimize network designs using Kruskal's and Prim's algorithms.
+
 ### Graph Theory
 Study algorithms for working with networks and relationships, including shortest path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall) and minimum spanning tree construction.
 
@@ -54,24 +57,17 @@ This systematic approach ensures both theoretical understanding and practical im
 
 ## Prerequisites and Preparation
 
-To maximize learning effectiveness, students should have:
+To maximize learning effectiveness, you should have:
 - Basic proficiency in Go programming language
 - Understanding of fundamental data structures (arrays, slices, maps)
 - Familiarity with basic mathematical concepts including logarithms and exponentials
+- Understanding of Big O notation (we'll review this as we go)
 - Ability to analyze code and trace through execution steps
-
-Ready to begin your algorithmic journey? Start with our introduction to sorting algorithms through Bubble Sort.
-
-## Prerequisites
-
-To get the most out of this section, you should have:
-
-- Basic programming knowledge (preferably Go, but concepts apply to any language)
-- Understanding of basic data structures (arrays, slices, maps)
-- Familiarity with Big O notation (we'll review this as we go)
 
 ## Ready to Start?
 
 Choose a topic from the sidebar to begin your algorithmic journey. If you're new to algorithms, we recommend starting with sorting algorithms as they provide excellent foundations for understanding complexity analysis and algorithm design patterns.
+
+For those interested in graph theory and connectivity problems, our comprehensive guide on **Minimum Spanning Trees** offers deep insights into Prim's and Kruskal's algorithms with complete Go implementations.
 
 Happy learning! 

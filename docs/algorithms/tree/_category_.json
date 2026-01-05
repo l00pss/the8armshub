@@ -1,0 +1,14 @@
+{
+  "label": "Tree Algorithms",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "className": "green",
+  "link": {
+    "type": "generated-index",
+    "title": "Tree Algorithms",
+    "description": "Explore tree data structures and algorithms including Minimum Spanning Trees, Binary Trees, and graph traversal techniques with Go implementations.",
+    "slug": "/algorithms/tree"
+  }
+}
+

@@ -1,0 +1,169 @@
+.shareContainer {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-border-color);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+}
+
+.shareTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.shareButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.shareButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ifm-border-color);
+  border-radius: 6px;
+  background: var(--ifm-button-background-color);
+  color: var(--ifm-button-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.shareButton:hover {
+  background: var(--ifm-button-hover-background-color);
+  border-color: var(--ifm-button-hover-border-color);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shareIcon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Platform-specific colors */
+.shareButton.twitter {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.shareButton.twitter:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.shareButton.linkedin {
+  border-color: #0077b5;
+  color: #0077b5;
+}
+
+.shareButton.linkedin:hover {
+  background: #0077b5;
+  color: white;
+}
+
+
+.shareButton.reddit {
+  border-color: #ff4500;
+  color: #ff4500;
+}
+
+.shareButton.reddit:hover {
+  background: #ff4500;
+  color: white;
+}
+
+
+.shareButton.copy {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.shareButton.copy:hover {
+  background: #6c757d;
+  color: white;
+}
+
+.shareButton.native {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.shareButton.native:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .shareButtons {
+    justify-content: center;
+  }
+
+  .shareButton {
+    flex: 1;
+    justify-content: center;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shareButton {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .shareIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Light mode specific styling */
+[data-theme='light'] .shareButton.copy {
+  border-color: #495057;
+  color: #495057;
+  background: #f8f9fa;
+}
+
+[data-theme='light'] .shareButton.copy:hover {
+  background: #495057;
+  color: white;
+  border-color: #495057;
+}
+
+[data-theme='light'] .shareButton {
+  border-color: rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  color: #495057;
+}
+
+[data-theme='light'] .shareButton:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .shareContainer {
+  border-color: var(--ifm-border-color);
+  background: var(--ifm-background-surface-color);
+}
+
+[data-theme='dark'] .shareButton {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-border-color);
+}
+
+[data-theme='dark'] .shareButton:hover {
+  background: var(--ifm-hover-overlay);
+}

@@ -17,7 +17,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Algorithms',
-      collapsed: false,
+      collapsed: true,
       items: [
         'algorithms/intro',
         {
@@ -32,7 +32,13 @@ const sidebars: SidebarsConfig = {
             'algorithms/sorting/heap-sort',
           ],
         },
-        // More categories will be added as content is created
+        {
+          type: 'category',
+          label: 'Tree Algorithms',
+          items: [
+            'algorithms/tree/mst',
+          ],
+        },
       ],
     },
 
@@ -40,7 +46,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Mathematics',
-      collapsed: false,
+      collapsed: true,
       items: [
         'mathematics/intro',
         {
@@ -59,10 +65,17 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Distributed Systems',
-      collapsed: false,
+      collapsed: true,
       items: [
         'distributed-systems/intro',
-        // More categories will be added as content is created
+        {
+          type: 'category',
+          label: 'Replication',
+          items: [
+            'distributed-systems/replication/wal',
+            'distributed-systems/replication/segmented-log',
+          ],
+        },
       ],
     },
   ],
